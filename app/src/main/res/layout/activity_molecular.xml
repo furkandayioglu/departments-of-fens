@@ -18,6 +18,7 @@
             android:layout_margin="10dp"
             android:contentDescription="@string/molecular_engineering"
             android:src="@mipmap/ic_launcher"
+            app:srcCompat="@mipmap/molecular"
             tools:srcCompat="@mipmap/molecular" />
 
         <TextView
@@ -26,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@color/material_blue_100"
-            android:text="@string/mechatronics_engineering_info" />
+            android:text="@string/molecular_engineering_info" />
 
         <LinearLayout
             android:layout_width="match_parent"

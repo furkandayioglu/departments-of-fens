@@ -27,7 +27,10 @@ class MolecularActivity : AppCompatActivity() {
 
         btn_next.setOnClickListener {
 
-            Toast.makeText(this@MolecularActivity, "No Previous Department", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, DepartmentsActivity::class.java).apply {
+
+            }
+            startActivity(intent)
         }
     }
 }

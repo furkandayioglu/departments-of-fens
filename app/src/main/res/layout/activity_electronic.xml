@@ -19,6 +19,7 @@
             android:layout_margin="10dp"
             android:contentDescription="@string/electronic_engineering"
             android:src="@mipmap/ic_launcher"
+            app:srcCompat="@mipmap/electronics"
             tools:srcCompat="@mipmap/electronics" />
 
         <TextView

@@ -19,6 +19,7 @@
             android:layout_margin="10dp"
             android:contentDescription="@string/computer_engineering"
             android:src="@mipmap/ic_launcher"
+            app:srcCompat="@mipmap/computer"
             tools:srcCompat="@mipmap/computer" />
 
         <TextView

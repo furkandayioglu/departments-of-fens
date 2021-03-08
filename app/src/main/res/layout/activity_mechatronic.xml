@@ -19,6 +19,7 @@
             android:layout_margin="10dp"
             android:contentDescription="@string/mechatronics_engineering"
             android:src="@mipmap/ic_launcher"
+            app:srcCompat="@mipmap/mechatronics"
             tools:srcCompat="@mipmap/mechatronics" />
 
         <TextView

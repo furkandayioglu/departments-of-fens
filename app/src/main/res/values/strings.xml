@@ -12,25 +12,33 @@
     <string name="molecular_engineering">Molecular Engineering</string>
 
 
-    <string name="civil_engineering_info">Civil Engineering</string>
+    <string name="civil_engineering_info">Increasing demands on housing, transportation, water and energy due to rapidly increasing population both in local and in the global context and initiatives to ensure sustainability to mitigate the unfavorable environmental conditions have increased the demand for civil engineering practice. It is highly expected that a more intensive work will be undertaken in the field of civil engineering.</string>
 
 
-    <string name="computer_engineering_info">Computer Engineering</string>
+    <string name="computer_engineering_info">Due to it is rapid growth, "Computer Engineering" is in a leading position in the future of professions. The main philosophy of our department is to educate engineers equipped with up to date knowledge who can produce knowledge and respond to the needs of the academic life and the business sector successfully. The research fields of our academicians are analysis and design of algorithms, microprocessor systems, embedded systems, computer architecture, computer networks, database systems and database application development, computational geometry, parallel programming, software engineering and high-performance computing.
+
+The aim of Computer Engineering Department is to become a leader in education and research areas among our national engineering departments and become a well known  computer engineering department at the international arena.</string>
 
 
-    <string name="electronic_engineering_info">Electric Electronics Engineering</string>
+    <string name="electronic_engineering_info">Electrical - Electronics engineering is a dynamic and exciting field that provides excellent career opportunities in all sectors of society and is one of the largest manufacturing industries in the world. The advancements in electrical - electronics engineering are considered some of the main factors in reshaping our modern society in all aspects including health, business, education and entertainment. Electrical - Electronics engineers design and implement a wide range of systems such as telecommunication networks, faster computer chips, medical equipment, industrial instrumentation, control, microwaves, computer network security as well as image and signal processing.</string>
 
 
-    <string name="energy_engineering_info">Energy Systems Engineering</string>
+    <string name="energy_engineering_info">It would not be difficult to comprehend the importance of energy issues for Turkey if one looks at the form and frequency of these issues’ presence in the conventional and social media. There is not a single day that energy issues do not make headline news. The intensity of energy issues’ coverage is not solely caused by the speed of Turkey’s economic growth, but is a consequence of the centrality of energy in Turkish foreign policy making. Turkey’s future will mostly be shaped by its capacity to maintain sustainanable energy development.
+
+Energy comes also at the top of the global challenges. The dependence of the world energy system on fossil fuel reserves which are becoming rapidly more scarce, has recently intensified geopolitical conflicts emerging from access to these scarce resources.  In the case of easy access to and consumption of fossil fuels increase the carbon-dioxide levels in the atmosphere, causing global climate change. This paradoxical situation could only be resolved through a “green revolution”, or a healthy transition of energy economy into a “low carbon economy.” In other words, the future of mankind will be shaped by the success of such a transition.</string>
 
 
-    <string name="industrial_engineering_info">Industrial Engineering</string>
+    <string name="industrial_engineering_info">It is more important than ever to effectively utilize the resources under increasing population and consumer demands while there are limited and decreasing resources. Increasing globalization and communication methods allowed demand and production to go beyond borders. Industrial Engineers follows the “Engineers make, Industrial Engineers Improves and develops” rule.   This makes very important contribution to increase productivity everywhere such as government offices, factories, hospitals, banks and many other businesses.
+
+The main objective of the for-profit organizations is to produce cheapest and highest quality products and outputs while minimizing their inputs. Industrial Engineering deals with the design, development and management of systems in which a mixture of material, energy, information systems, capital, equipment, labor and time resources are effectively used.  In this respect, Industrial Engineers need to have advanced coordinating skills, system thinking ability, good analytical and quantitative skills. It is preferred that they use the tools to reach the information they need to solve a problem and develop themselves to keep up with the changing times.</string>
 
 
-    <string name="mechatronics_engineering_info">Mechatronics Engineering</string>
+    <string name="mechatronics_engineering_info">Kadir Has University, Faculty of Engineering and Natural Sciences, Mechatronics Engineering Undergraduate Program is focused on topics and their applications that recently gained increasing importance and require a synergistic combination of mechanics, electronics and software — such as sensor technologies, robotics, automation.
+
+Twenty students on full scholarship were accepted in the 2019–2020 academic year.</string>
 
 
-    <string name="molecular_engineering_info">Molecular Engineering</string>
+    <string name="molecular_engineering_info">In today’s world molecular biology, biochemistry and other biological fields are becoming increasingly information driven. Mainly the need of processing massive quantities of sequence information generated by recent developments in genome sequencing and proteome analysis has propelled these life sciences into a new era in which computer science, information technologies, and biology merged into a single discipline as bioinformatics. Accordingly genetics in conjunction with bioinformatics have been changing the old view in clinical diagnostics. By comprehensive genetic testing, individuals who are more susceptible to disease can be identified before any disease even exists. This way early predictive measures can be taken. Moreover personalized drug design, to tailor a specialized treatment based on your genetic makeup, seems to be a standard way of disease treatment in the near future.</string>
 
 
     <string name="prev">Prev</string>
