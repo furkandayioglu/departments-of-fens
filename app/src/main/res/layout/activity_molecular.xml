@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_blue_grey_100"
-    tools:context=".Fragment_Mechatronics">
-
-    <!-- TODO: Update blank fragment layout -->
-
+    tools:context=".MolecularActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -16,20 +12,21 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/im_mechatronics_cover"
+            android:id="@+id/im_molecular_cover"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="152dp"
             android:layout_margin="10dp"
-            android:contentDescription="@string/computer_engineering"
-            android:src="@mipmap/ic_launcher" />
+            android:contentDescription="@string/molecular_engineering"
+            android:src="@mipmap/ic_launcher"
+            tools:srcCompat="@mipmap/molecular" />
 
         <TextView
-            android:id="@+id/tv_mechatronics_info"
+            android:id="@+id/tv_molecular_info"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="456dp"
             android:layout_margin="10dp"
             android:background="@color/material_blue_100"
-            android:text="@string/hello_blank_fragment" />
+            android:text="@string/mechatronics_engineering_info" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,14 +38,14 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_mechatronics_prev"
+                android:id="@+id/btn_molecular_prev"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/prev" />
 
             <Button
-                android:id="@+id/btn_industrial_next"
+                android:id="@+id/btn_molecular_next"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -56,4 +53,4 @@
         </LinearLayout>
     </LinearLayout>
 
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

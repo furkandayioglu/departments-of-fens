@@ -24,25 +24,25 @@ class DepartmentsActivity : AppCompatActivity() {
         listview.setOnItemClickListener{parent, view, position, id ->
 
             if (position==0){
-                changeFragment(Fragment_Civil())
+
             }
             if (position==1){
-                changeFragment(Fragment_Computer())
+
             }
             if (position==2){
-                changeFragment(Fragment_ElectricElectronics())
+
             }
             if (position==3){
-                changeFragment(Fragment_EnergySystems())
+
             }
             if (position==4){
-                changeFragment(Fragment_Industrial())
+
             }
             if(position==5){
-                changeFragment(Fragment_Mechatronics())
+
             }
             if(position==6){
-                changeFragment(Fragment_Molecular())
+
             }
         }
     }

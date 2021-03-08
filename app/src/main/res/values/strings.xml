@@ -5,6 +5,35 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="computer_engineering">Computer Engineering</string>
     <string name="civil_engineering">Civil Engineering</string>
+    <string name="electronic_engineering">Electric Electronics Engineering</string>
+    <string name="energy_engineering">Energy Systems Engineering</string>
+    <string name="industrial_engineering">Industrial Engineering</string>
+    <string name="mechatronics_engineering">Mechatronics Engineering</string>
+    <string name="molecular_engineering">Molecular Engineering</string>
+
+
+    <string name="civil_engineering_info">Civil Engineering</string>
+
+
+    <string name="computer_engineering_info">Computer Engineering</string>
+
+
+    <string name="electronic_engineering_info">Electric Electronics Engineering</string>
+
+
+    <string name="energy_engineering_info">Energy Systems Engineering</string>
+
+
+    <string name="industrial_engineering_info">Industrial Engineering</string>
+
+
+    <string name="mechatronics_engineering_info">Mechatronics Engineering</string>
+
+
+    <string name="molecular_engineering_info">Molecular Engineering</string>
+
+
     <string name="prev">Prev</string>
     <string name="next">Next</string>
+
 </resources>

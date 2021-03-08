@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_blue_grey_100"
-    tools:context=".Fragment_Civil">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".ElectronicActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,20 +13,21 @@
         android:orientation="vertical">
 
         <ImageView
-            android:id="@+id/im_civil_cover"
+            android:id="@+id/im_electronic_cover"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="147dp"
             android:layout_margin="10dp"
-            android:contentDescription="@string/civil_engineering"
-            android:src="@mipmap/ic_launcher" />
+            android:contentDescription="@string/electronic_engineering"
+            android:src="@mipmap/ic_launcher"
+            tools:srcCompat="@mipmap/electronics" />
 
         <TextView
-            android:id="@+id/tv_civil_info"
+            android:id="@+id/tv_electronic_info"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="463dp"
             android:layout_margin="10dp"
             android:background="@color/material_blue_100"
-            android:text="@string/hello_blank_fragment" />
+            android:text="@string/electronic_engineering_info" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,19 +38,18 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/btn_civil_prev"
+                android:id="@+id/btn_electronic_prev"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/prev" />
 
             <Button
-                android:id="@+id/btn_civil_next"
+                android:id="@+id/btn_electronic_next"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/next" />
         </LinearLayout>
     </LinearLayout>
-
-</FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
