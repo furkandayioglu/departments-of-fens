@@ -17,7 +17,7 @@ class IndustrialActivity : AppCompatActivity() {
 
         btn_prev.setOnClickListener{
 
-            val intent = Intent(this, ElectronicActivity::class.java).apply {
+            val intent = Intent(this, EnergyActivity::class.java).apply {
 
             }
             startActivity(intent)

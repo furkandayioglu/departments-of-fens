@@ -1,5 +1,6 @@
 package com.example.deparmetnsoffens
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
@@ -24,25 +25,46 @@ class DepartmentsActivity : AppCompatActivity() {
         listview.setOnItemClickListener{parent, view, position, id ->
 
             if (position==0){
+                val intent = Intent(this, CivilActivity::class.java).apply {
 
+                }
+                startActivity(intent)
             }
             if (position==1){
+                val intent = Intent(this, ComputerActivity::class.java).apply {
 
+                }
+                startActivity(intent)
             }
             if (position==2){
+                val intent = Intent(this, ElectronicActivity::class.java).apply {
 
+                }
+                startActivity(intent)
             }
             if (position==3){
+                val intent = Intent(this, EnergyActivity::class.java).apply {
 
+                }
+                startActivity(intent)
             }
             if (position==4){
+                val intent = Intent(this, IndustrialActivity::class.java).apply {
 
+                }
+                startActivity(intent)
             }
             if(position==5){
+                val intent = Intent(this, MechatronicActivity::class.java).apply {
 
+                }
+                startActivity(intent)
             }
             if(position==6){
+                val intent = Intent(this, MolecularActivity::class.java).apply {
 
+                }
+                startActivity(intent)
             }
         }
     }

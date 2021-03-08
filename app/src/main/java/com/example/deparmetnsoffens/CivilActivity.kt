@@ -17,7 +17,10 @@ class CivilActivity : AppCompatActivity() {
 
         btn_prev.setOnClickListener{
 
-            Toast.makeText(this@CivilActivity, "No Previous Department", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, DepartmentsActivity::class.java).apply {
+
+            }
+            startActivity(intent)
         }
 
 

@@ -23,7 +23,7 @@
         <TextView
             android:id="@+id/tv_energy_info"
             android:layout_width="match_parent"
-            android:layout_height="463dp"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="@color/material_blue_100"
             android:text="@string/energy_engineering_info" />
