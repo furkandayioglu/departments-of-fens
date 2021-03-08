@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
 import android.widget.Toast
-import androidx.fragment.app.FragmentActivity
+import androidx.fragment.app.Fragment
 
-class DepartmentsActivity : FragmentActivity() {
+class DepartmentsActivity : AppCompatActivity() {
     private lateinit var listview : ListView
     var list = mutableListOf<ListModel>()
 
@@ -25,25 +25,25 @@ class DepartmentsActivity : FragmentActivity() {
         listview.setOnItemClickListener{parent, view, position, id ->
 
             if (position==0){
-                Toast.makeText(this@DepartmentsActivity, "Civil Engineering",   Toast.LENGTH_SHORT).show()
+                changeFragment(Fragment_Civil())
             }
             if (position==1){
-                Toast.makeText(this@DepartmentsActivity, "Computer Engineering",   Toast.LENGTH_SHORT).show()
+                changeFragment(Fragment_Computer())
             }
             if (position==2){
-                Toast.makeText(this@DepartmentsActivity, "Electric-Electronic Engineering", Toast.LENGTH_SHORT).show()
+                changeFragment(Fragment_ElectricElectronics())
             }
             if (position==3){
-                Toast.makeText(this@DepartmentsActivity, "Energy Systems Engineering",  Toast.LENGTH_SHORT).show()
+                changeFragment(Fragment_EnergySystems())
             }
             if (position==4){
-                Toast.makeText(this@DepartmentsActivity, "Industrial Engineering",  Toast.LENGTH_SHORT).show()
+                changeFragment(Fragment_Industrial())
             }
             if(position==5){
-                Toast.makeText(this@DepartmentsActivity, "Mechatronics Engineering",  Toast.LENGTH_SHORT).show()
+                changeFragment(Fragment_Mechatronics())
             }
             if(position==6){
-                Toast.makeText(this@DepartmentsActivity, "Molecular Biology Engineering",  Toast.LENGTH_SHORT).show()
+                changeFragment(Fragment_Molecular())
             }
         }
     }
@@ -56,5 +56,14 @@ class DepartmentsActivity : FragmentActivity() {
         list.add(ListModel("Industrial Engineering",R.mipmap.industrial))
         list.add(ListModel("Mechatronics Engineering",R.mipmap.mechatronics))
         list.add(ListModel("Molecular Biology Engineering",R.mipmap.molecular))
+    }
+
+
+
+    fun changeFragment(fragment: Fragment) {
+        val fragmentTransaction = supportFragmentManager.beginTransaction()
+        fragmentTransaction.replace(R.id.frameLayout, fragment)
+        fragmentTransaction.commit()
+
     }
 }
