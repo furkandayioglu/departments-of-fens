@@ -3,7 +3,6 @@ package com.example.deparmetnsoffens
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ListView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 
 class DepartmentsActivity : AppCompatActivity() {
@@ -16,7 +15,7 @@ class DepartmentsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_departments)
-        listview = findViewById(R.id.listview)
+        listview = findViewById(R.id.lv_departments)
         list_init()
         listview.adapter = DepartmentListAdapter(this,R.layout.department_column,list)
 
@@ -62,7 +61,7 @@ class DepartmentsActivity : AppCompatActivity() {
 
     fun changeFragment(fragment: Fragment) {
         val fragmentTransaction = supportFragmentManager.beginTransaction()
-        fragmentTransaction.replace(R.id.frameLayout, fragment)
+        fragmentTransaction.replace(R.id.fL_department, fragment)
         fragmentTransaction.commit()
 
     }

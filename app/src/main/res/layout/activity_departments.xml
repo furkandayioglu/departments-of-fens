@@ -7,17 +7,17 @@
     tools:context=".DepartmentsActivity">
 
     <ListView
-        android:id="@+id/listview"
+        android:id="@+id/lv_departments"
         android:layout_width="409dp"
         android:layout_height="match_parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/fL_department"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/listview"
+        android:layout_below="@id/lv_departments"
         android:orientation="horizontal">
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
