@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EnergyActivity">
+    tools:context=".EnergyActivity"
+    android:background="@mipmap/energy_eng">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,9 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:contentDescription="@string/energy_engineering"
-            android:src="@mipmap/ic_launcher"
-            app:srcCompat="@mipmap/energy"
-            tools:srcCompat="@mipmap/energy" />
+            android:src="@mipmap/energy"/>
 
         <TextView
             android:id="@+id/tv_energy_info"

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IndustrialActivity">
+    tools:context=".IndustrialActivity"
+    android:background="@mipmap/ind_eng">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -17,9 +18,7 @@
             android:layout_height="135dp"
             android:layout_margin="10dp"
             android:contentDescription="@string/industrial_engineering"
-            android:src="@mipmap/ic_launcher"
-            app:srcCompat="@mipmap/industrial"
-            tools:srcCompat="@mipmap/industrial" />
+            android:src="@mipmap/industrial" />
 
         <TextView
             android:id="@+id/tv_industrial_info"

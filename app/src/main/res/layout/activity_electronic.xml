@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ElectronicActivity">
+    tools:context=".ElectronicActivity"
+    android:background="@mipmap/eng_electronics">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,9 +19,7 @@
             android:layout_height="147dp"
             android:layout_margin="10dp"
             android:contentDescription="@string/electronic_engineering"
-            android:src="@mipmap/ic_launcher"
-            app:srcCompat="@mipmap/electronics"
-            tools:srcCompat="@mipmap/electronics" />
+            android:src="@mipmap/electronics" />
 
         <TextView
             android:id="@+id/tv_electronic_info"

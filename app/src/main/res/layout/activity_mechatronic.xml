@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MechatronicActivity">
+    tools:context=".MechatronicActivity"
+    android:background="@mipmap/mech_eng">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,9 +19,7 @@
             android:layout_height="131dp"
             android:layout_margin="10dp"
             android:contentDescription="@string/mechatronics_engineering"
-            android:src="@mipmap/ic_launcher"
-            app:srcCompat="@mipmap/mechatronics"
-            tools:srcCompat="@mipmap/mechatronics" />
+            android:src="@mipmap/mechatronics"/>
 
         <TextView
             android:id="@+id/tv_mechatronics_info"

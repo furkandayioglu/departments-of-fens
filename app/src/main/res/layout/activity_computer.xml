@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/material_blue_50"
+    android:background="@mipmap/computer_eng"
     tools:context=".ComputerActivity">
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,9 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:contentDescription="@string/computer_engineering"
-            android:src="@mipmap/ic_launcher"
-            app:srcCompat="@mipmap/computer"
-            tools:srcCompat="@mipmap/computer" />
+            android:src="@mipmap/computer"/>
 
         <TextView
             android:id="@+id/tv_computer_info"
