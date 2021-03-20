@@ -31,8 +31,7 @@ class DepartmentInfoFragment : Fragment() {
     val TAG ="DiFragment"
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+        savedInstanceState: Bundle? ): View? {
         // Inflate the layout for this fragment
         var v : View = inflater.inflate(R.layout.fragment_department_info, container, false)
         model = ViewModelProvider(requireActivity()).get(DepartmentsViewModel::class.java)
@@ -46,12 +45,12 @@ class DepartmentInfoFragment : Fragment() {
 
 
         button_prev.setOnClickListener{
-            model.prevButtonClick(model.position)
+            model.prevButtonClick()
             set_UI()
         }
 
         button_next.setOnClickListener{
-            model.nextButtonClick(model.position)
+            model.nextButtonClick()
             set_UI()
         }
 
@@ -77,6 +76,6 @@ class DepartmentInfoFragment : Fragment() {
         title.text = model?.title?.let { resources.getString(it) }
         fInfo.text = model?.info_str?.let { resources.getString(it) }
 
-        Log.d("DepartmentActivity",model.toString())
+
     }
 }

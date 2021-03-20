@@ -22,13 +22,19 @@ class DepartmentsActivity : AppCompatActivity(),LifecycleOwner {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+
         setContentView(R.layout.activity_departments)
         listview = findViewById(R.id.lv_departments)
-        list_init()
-
 
         listview.adapter = DepartmentListAdapter(this,R.layout.department_column,list)
         viewModel = ViewModelProvider(this).get(DepartmentsViewModel::class.java)
+
+        listview.visibility = viewModel.listviewStatus
+        list_init()
+
+
+
 
 
         listview.setOnItemClickListener{parent, view, position, id ->
@@ -70,8 +76,9 @@ class DepartmentsActivity : AppCompatActivity(),LifecycleOwner {
 
 
     fun changeFragment(position:Int,fragment: Fragment) {
-        listview.visibility= View.INVISIBLE
-        viewModel.listViewClick(0)
+        viewModel.listviewStatus=View.INVISIBLE
+        listview.visibility= viewModel.listviewStatus
+        viewModel.listViewClick(position)
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fL_department, fragment)
         fragmentTransaction.commit()
