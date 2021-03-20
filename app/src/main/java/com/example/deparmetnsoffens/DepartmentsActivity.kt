@@ -3,13 +3,20 @@ package com.example.deparmetnsoffens
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.ListView
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.ViewModelProvider
 
-class DepartmentsActivity : AppCompatActivity() {
+class DepartmentsActivity : AppCompatActivity(),LifecycleOwner {
+
+
+
     private lateinit var listview : ListView
     var list = mutableListOf<ListModel>()
-
+    lateinit var viewModel : DepartmentsViewModel
 
 
 
@@ -18,53 +25,34 @@ class DepartmentsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_departments)
         listview = findViewById(R.id.lv_departments)
         list_init()
-        listview.adapter = DepartmentListAdapter(this,R.layout.department_column,list)
 
+
+        listview.adapter = DepartmentListAdapter(this,R.layout.department_column,list)
+        viewModel = ViewModelProvider(this).get(DepartmentsViewModel::class.java)
 
 
         listview.setOnItemClickListener{parent, view, position, id ->
 
             if (position==0){
-                val intent = Intent(this, CivilActivity::class.java).apply {
-
-                }
-                startActivity(intent)
+                changeFragment(position,DepartmentInfoFragment())
             }
             if (position==1){
-                val intent = Intent(this, ComputerActivity::class.java).apply {
-
-                }
-                startActivity(intent)
+                changeFragment(position,DepartmentInfoFragment())
             }
             if (position==2){
-                val intent = Intent(this, ElectronicActivity::class.java).apply {
-
-                }
-                startActivity(intent)
+                changeFragment(position,DepartmentInfoFragment())
             }
             if (position==3){
-                val intent = Intent(this, EnergyActivity::class.java).apply {
-
-                }
-                startActivity(intent)
+                changeFragment(position,DepartmentInfoFragment())
             }
             if (position==4){
-                val intent = Intent(this, IndustrialActivity::class.java).apply {
-
-                }
-                startActivity(intent)
+                changeFragment(position,DepartmentInfoFragment())
             }
             if(position==5){
-                val intent = Intent(this, MechatronicActivity::class.java).apply {
-
-                }
-                startActivity(intent)
+                changeFragment(position,DepartmentInfoFragment())
             }
             if(position==6){
-                val intent = Intent(this, MolecularActivity::class.java).apply {
-
-                }
-                startActivity(intent)
+                changeFragment(position,DepartmentInfoFragment())
             }
         }
     }
@@ -81,7 +69,9 @@ class DepartmentsActivity : AppCompatActivity() {
 
 
 
-    fun changeFragment(fragment: Fragment) {
+    fun changeFragment(position:Int,fragment: Fragment) {
+        listview.visibility= View.INVISIBLE
+        viewModel.listViewClick(0)
         val fragmentTransaction = supportFragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.fL_department, fragment)
         fragmentTransaction.commit()
